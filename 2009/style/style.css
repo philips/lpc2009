@@ -1,0 +1,373 @@
+/*
+LAYOUT: Linux Plumbers Conf
+DESCRIPTION: Two-column fluid layout with one sidebars right of content
+COLORS:
+
+top banner, th:	#00483a;
+h1, td:		#EDF9F7;
+*/
+
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border:0 none;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+p {
+margin:0 0 1.5em;
+}
+
+body {
+	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
+	background:#FFC211; 
+	font-size:87.5%;
+	position: relative;
+	padding: 0 .5em 0 .5em;
+	margin-bottom: 25px;
+}
+
+#wrapper {
+	background:#FFFFFF none repeat scroll 0 0;
+	width:71em;
+	margin: 0 auto;
+	position: relative;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div#content {
+	padding-left: 1em;
+}
+
+/*
+ * MENU
+ */
+
+
+div#menu {
+	padding-top:0.3em;
+	font-size:1em;
+	height:3.5em;
+	background: #00483a;
+	width:100%;
+}
+
+div#menu ul {
+	padding: 6px 0 7px 0;
+	margin: 0;
+	text-align: right;
+}
+
+div#menu ul li {
+	display: inline;
+	float:left;
+}
+
+div#menu ul li a {
+	font-size: 1.2em;
+	color: #fff;
+	padding: 6px 3px 4px 3px;
+	margin-left: 20px;
+	text-decoration: none;
+	border-bottom: 3px solid gray;
+	text-transform: uppercase;
+}
+
+div#menu ul li a:hover, div#menu ul li a.selected {
+	border-bottom-color: black;
+}
+
+div#menu ul,div#menu ul ul {
+line-height:1;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+div#menu ul a {
+display:block;
+margin-right:1em;
+padding:0.2em 0.5em;
+text-decoration:none;
+}
+
+div#menu ul ul ul a {
+font-style:italic;
+}
+
+div#menu ul li ul {
+left:-999em;
+position:absolute;
+}
+
+div#menu ul li:hover ul {
+left:auto;
+}
+
+
+
+
+blockquote {
+       font-style: italic;
+       padding-left: 10px;
+       border-left: 4px #00483a solid;
+}
+
+div.entry-date, blockquote div.source {
+       color: #555;
+       margin-top: .5em;
+       text-align: right;
+       font-style: italic;
+}
+
+/* 
+ * SIDEBAR
+ */
+
+div.sidebar ul, div.sidebar h3 {
+margin: 1.4em 0 0 0;
+}
+
+div.sidebar h3 {
+font-size:1.2em;
+}
+
+div.sidebar input#s {
+width:7em;
+}
+
+div.sidebar li {
+list-style:none;
+margin:0 0 2em;
+}
+
+div.sidebar li form {
+margin:0.2em 0 0;
+padding:0;
+}
+
+div.sidebar ul ul {
+margin:1em 0 0 1em;
+}
+
+div.sidebar ul ul li {
+list-style:disc;
+margin:0;
+}
+
+div.sidebar ul ul ul {
+margin:0 0 0 0.5em;
+}
+
+div.sidebar ul ul ul li {
+list-style:circle;
+}
+
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+float:left;
+}
+
+
+
+/*
+ * HEADER
+ */
+
+div#header {
+	padding: 0px 20px 10px 20px;
+	position: relative;
+	background:transparent url(hood.jpg) repeat scroll 0 0;
+}
+
+div.skip-link a {
+	position: absolute;
+	right: 0;
+	top: -99px;
+	background: #116db6;
+	color: #fff;
+	padding: .5em;
+	font-size: .7em;
+	text-decoration: none;
+}
+
+div.skip-link a:focus {
+	top: 0;
+}
+
+#site-title,
+#site-title a,
+#site-description {
+	overflow: hidden;
+	display: block;
+	text-indent: -999px;
+	background: none;
+}
+
+#site-title, #site-title a {
+	height: 184px;
+	width: 163px;
+}
+
+#site-title a {
+        -moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background: transparent url(penguin.gif) no-repeat;
+}
+
+#site-description {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(tagline.gif) no-repeat scroll 0 0;
+	bottom:30px;
+	height:90px;
+	position:absolute;
+	right:10px;
+	width:493px;
+}
+
+/*
+ * CONTENT
+ */
+
+div#container {
+	float:left;
+	margin: 0 -300px 0 0;
+	width:100%;
+}
+
+div#container,div#primary {
+margin-top:2em;
+}
+
+div#content {
+	margin:0 300px 0 0;
+	padding: 0 20px 0 20px;
+}
+
+h1,
+h2.entry-title {
+	font-size: 1.85em;
+	background: #EDF9F7;
+	margin: 0 -20px .8em;
+	padding: .2em 25px;
+	line-height: 1.5;
+	color: #333;
+}
+
+
+h1 a,
+h2.entry-title a {
+	color: #00483A;
+	text-decoration: none;
+}
+h2 {
+	font-size: 1.65em;
+	margin-bottom: 0.6em;
+}
+
+h3 {
+	font-size: 1.35em;
+	line-height: 1;
+	margin-bottom: .7em;
+}
+
+h4 {
+	font-size: 1.15em;
+	line-height: 1.25;
+	margin-bottom: .7em;
+}
+
+h5 {
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	color: #00483A;
+}
+
+h4, h5, h6 {
+	color: #333;
+}
+
+
+div.sidebar {
+float:right;
+overflow:hidden;
+width:250px;
+}
+
+div#secondary {
+clear:right;
+}
+
+div#footer {
+clear:both;
+width:100%;
+}
+
+div#header, div#footer {
+text-align:center;
+}
+
+
+ul, ol {
+  margin: 0 1.5em 1.5em 1.5em;
+}
+ 
+ul {
+  list-style-type: circle;
+}
+ 
+ol {
+  list-style: outside decimal;
+}
+ 
+.price-table th {
+	background: #00483a;
+	color: #fff;
+	font-weight: normal;
+	padding: 0 1em 0 1em;
+} 
+
+.price-table td {
+	vertical-align: middle;
+	width: 175px;
+	background: #EDF9F7;
+	padding: 0.333em;
+}
+
+table.price-table td{
+  border: 1px dotted #efefef;
+  vertical-align: top
+} 
+
+table.price-table {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+div.sidebar ul .sponsor-links li {
+list-style-type: none;
+margin-top:0.8em;
+}
+
+ul.sponsor-links {
+padding: 0;
+margin: 0px;
+padding: 0px;
+}

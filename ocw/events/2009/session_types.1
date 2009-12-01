@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Session Types / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* Audio */
+  .track-1 { color: #04207c; }
+  .track-1.block { background: #04207c; color: #fff; }
+  .track-1.light { background: #0633c6; }
+  .track-1.light:hover { background: #062dae; }
+
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+  /* Boot and Init */
+  .track-12 { color: #8b9dcb; }
+  .track-12.block { background: #8b9dcb; color: #fff; }
+  .track-12.light { background: #ffffff; }
+  .track-12.light:hover { background: #e9edf5; }
+
+  /* Embedded Systems */
+  .track-4 { color: #2dc125; }
+  .track-4.block { background: #2dc125; color: #fff; }
+  .track-4.light { background: #8de888; }
+  .track-4.light:hover { background: #68e161; }
+
+  /* General */
+  .track-8 { color: #c97a18; }
+  .track-8.block { background: #c97a18; color: #fff; }
+  .track-8.light { background: #efba79; }
+  .track-8.light:hover { background: #eaa651; }
+
+  /* Inter-Distribution Cooperation */
+  .track-9 { color: #d93ab8; }
+  .track-9.block { background: #d93ab8; color: #fff; }
+  .track-9.light { background: #f4c4ea; }
+  .track-9.light:hover { background: #eb96d9; }
+
+  /* Kernel/Userspace/User  Interfaces */
+  .track-11 { color: #2a5534; }
+  .track-11.block { background: #2a5534; color: #fff; }
+  .track-11.light { background: #438853; }
+  .track-11.light:hover { background: #3b7749; }
+
+  /* Networking */
+  .track-6 { color: #298960; }
+  .track-6.block { background: #298960; color: #fff; }
+  .track-6.light { background: #52cb97; }
+  .track-6.light:hover { background: #39c086; }
+
+  /* Real Time */
+  .track-13 { color: #404139; }
+  .track-13.block { background: #404139; color: #fff; }
+  .track-13.light { background: #66685b; }
+  .track-13.light:hover { background: #5a5b50; }
+
+  /* Security */
+  .track-2 { color: #eb2d2d; }
+  .track-2.block { background: #eb2d2d; color: #fff; }
+  .track-2.light { background: #fac6c6; }
+  .track-2.light:hover { background: #f59393; }
+
+  /* Storage */
+  .track-7 { color: #bebbce; }
+  .track-7.block { background: #bebbce; color: #fff; }
+  .track-7.light { background: #ffffff; }
+  .track-7.light:hover { background: #ffffff; }
+
+  /* X Window System */
+  .track-3 { color: #d253df; }
+  .track-3.block { background: #d253df; color: #fff; }
+  .track-3.light { background: #fbeefc; }
+  .track-3.light:hover { background: #edbaf2; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="session_types.1#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Session Types</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <h3><a href="session_types/1">Talk</a></h3>
+  <span class="description"><p>Talks should range from 20 minutes for the typical microconf sessions talk to 45 minutes (general track presentations).</p>
+<p>If you wish to submit a topic as a microconference, please submit it to the General track and add &#8220;Please consider as microconference&#8221; to the description.  Please note that a successful microconference requires buy-in and participation from maintainers and other high-profile people active in the area.  So, if you submit a microconference proposal, you will also need to encourage others to submit talk proposals relevant to your topic.</p>
+<p>The program committee has the final say in choice of microconference topics.  Each microconference must have a runner, who will have final say in what talks are accepted into that microconference.</p></span>
+  
+  
+
+  <h3><a href="session_types/2">Tutorial</a></h3>
+  <span class="description"><p>A tutorial on some technology, software, tool or application that will be of interest to Linux ecosystem developers.</p>
+<p>Please provide information on what you will need to run the tutorial (software, hardware,&#8230;), as well as the target audience your tutorial is directed at.</p>
+<p>Typically, tutorials will run from an hour to several hours. We will do our best to accommodate longer duration sessions if needed.</p></span>
+  
+  
+
+  <h3><a href="session_types/4">Keynote</a></h3>
+  <span class="description"><p>Featuring interesting personalities in the technology community.</p></span>
+  
+  
+
+  <h3><a href="session_types/6">Short Talk</a></h3>
+  <span class="description"><p>Talks should range from 20 minutes for the typical microconf sessions talk to 45 minutes (general track presentations).</p>
+<p>If you wish to submit a topic as a microconference, please submit it to the General track and add “Please consider as microconference” to the description. Please note that a successful microconference requires buy-in and participation from maintainers and other high-profile people active in the area. So, if you submit a microconference proposal, you will also need to encourage others to submit talk proposals relevant to your topic.</p>
+<p>The program committee has the final say in choice of microconference topics. Each microconference must have a runner, who will have final say in what talks are accepted into that microconference.</p></span>
+  
+  
+
+  <h3><a href="session_types/7">Lightning Talk</a></h3>
+  <span class="description"><p>A lightning talk will range from 5 to 10 minutes for the typical microconf.</p></span>
+  
+  
+
+
+<div>
+
+<a href="proposals.1" class="cancelable">Back to proposals</a>
+</div>
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

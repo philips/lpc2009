@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>OFFLINE SCHEDULER / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.favorites_path = '/ocw/users/me/favorites';
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+      populate_user_favorites();
+      bind_user_favorite_controls();
+      bind_calendar_items();
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="100#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>OFFLINE SCHEDULER</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+<a href="../login" class="favorite favorite_100"><span>*</span></a>
+
+
+
+
+
+
+  
+
+  <div class='show-proposal'>
+
+
+  <div class='proposal-meta'>
+    
+  
+      <div class='track block track-14'>
+        <a href="../events/2009bofs/tracks/14">BoF</a>
+      </div>
+  
+  
+      <a href="../events/2009bofs/session_types/3" class="session_type">BoF</a>
+  
+    <div class='proposal-slug'>
+      lpc2011-0100
+    </div>
+    
+  </div>
+
+
+  
+    <h3>Excerpt</h3>
+    <div class="compressed"><p>offsched is a platform aimed to assign an assignment to an offloaded processor. offloaded processor is a processor that is hot un-plugged from the operating system.</p></div>
+  
+
+    <h3>Description</h3>
+    <p>In today&#8217;s computer world, we find that most processors have several embedded cores and hyper-threading. Most programmers do not really use these powerful features and let the operating system do the work.<br />
+At most, a programmer will bound an application to a certain processor or assign an interrupt to a different processor. At the end, we get system busy in maintaining tasks across processors, balancing interrupts, flushing TLBs and DTLBs<sup class="footnote"><a href="100#fn1">1</a></sup> using atomic operations even when not needed and worst of all, spin locks across processors in vein; and the more processors the merrier. I argue that in some cases, part of this behavior is due to fact the multiple core operating system is not service oriented but a system oriented. There is no easy way to assign a processor to do a distinct service, undisturbed, accurate, and fast as long as the processor is an active part of an operating system and still be a part of most of the operating system address space.<br />
+ <br />
+<span class="caps">OFFSCHED</span> Purpose</p>
+<p>The purpose of the <span class="caps">OFFSCHED</span> is to create a platform for services. For example, assume a firewall is being attacked; the Linux operating system will generate endless number of interrupts and/or softirqs to analyze the traffic and throw out bad packets. This is on the expense of &#8220;good&#8221; packets. Have you ever tried to &#8220;ssh&#8221; to an attacked machine?  <br />
+What if we can simply do the packet analysis outside the operating system, without interrupts and still fast enough?<br />
+Why not assign a core to do only &#8220;firewalling&#8221;? Or just routing? Design a new type of Real Time system? Maybe assign it as an ultra accurate timer?  Create a delaying service that does not just spin? Offload a <span class="caps">TCP</span> stack?  perhaps a new type of a locking scheme? New type bottom-halves? Debug a running kernel through an offloaded processor? Maybe assign a <span class="caps">GPU</span> to do other things than just graphics? <br />
+Amdahl Law teaches us that linear speed-up is not very feasible <sup class="footnote"><a href="100#fn2">2</a></sup> <sup class="footnote"><a href="100#fn3">3</a></sup>, so why not spare a processor to do certain tasks better? <br />
+Technologically speaking, I am referring to the Linux kernel ability to virtually hot plug a (<span class="caps">SMT</span>) processor but instead of letting it wonder in endless &#8220;halts&#8221;, assign it a service.<br />
+<span class="caps">OFFSCHED</span> project can be found at :<br />
+<a href="http://sos-linux.svn.sourceforge.net/viewvc/sos-linux/offsched/" rel="nofollow">http://sos-linux.svn.sourceforge.net/viewvc/sos-linux/offsched/</a></p>
+<p>I have implemented:<br />
+1. <span class="caps">OFFSCHED</span>-RT. A different kind of a real time system.<br />
+2. <span class="caps">OFFSCHED</span>-<span class="caps">TIMER</span>. a 1us timer. <br />
+3. <span class="caps">OFFSCHED</span>-<span class="caps">RTOP</span>. remote top. <span class="caps">OFFSCHED</span> throws top-like information to a nother machine, while the <span class="caps">OFFSCHED</span> machine is not accessible<br />
+4. <span class="caps">OFFSCHED</span> <span class="caps">NAPI</span>. offloaded <span class="caps">NAPI</span><br />
+5. <span class="caps">OFFCSHED</span> <span class="caps">SECURED</span>. a firewall that protects the operating system.</p>
+
+  
+    <h3>Tags</h3>
+    <p>Real Time, SMP, SMT, cpu isolation, monitor, firewall, timer</p>
+  
+
+  
+
+  <div class="record-controls">
+    
+    <a href="../events/2009bofs/proposals.1" class="cancelable">Back to list of proposals</a>
+  </div>
+
+  
+    <h3>Speaker</h3>
+
+    
+
+<ul class='user_list'>
+
+  
+
+<li class="user_box vcard ">
+  
+  <div class='user_head'>
+    <h3><a href="../users/134" class="fn n" id="id_134" name="id_134">raz ben yehuda</a></h3>
+      </div>
+  <div class='user_body'>
+    <div class='user_links'>
+      <ul>
+                
+        
+        
+        
+        
+              </ul>
+    </div>
+
+  
+    <h4>Biography</h4>
+    <div class='note'>
+      <p>Name: Raz Ben Jehuda<br />
+Address : Halotem 8 Rishon Le Zion Israel<br />
+Status : Married + 1<br />
+Birth Date: 12.04.1972</p>
+<p>Education<br />
+Last phase of my <span class="caps">MSC</span> in computer sciences at the open university<br />
+Masters work: <a href="http://sos-linux.svn.sourceforge.net/viewvc/sos-linux/offsched/trunk/Documentation/" rel="nofollow">http://sos-linux.svn.sourceforge.net/viewvc/sos-linux/offsched/trunk/Documentation/</a><span class="caps">OFFSCHED</span>.pdf</p>
+<p>B.A degree at Haifa University in computer sciences and mathematics.<br />
+ <br />
+ Professional Experience<br />
+ <br />
+Raz is a Linux Kernel developer In RT team in an <span class="caps">IPTV</span> startup. He specialises in video streaming and storage performance.</p>
+    </div>
+  
+  
+  
+  
+  
+      
+  </div>
+</li>
+</ul>
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

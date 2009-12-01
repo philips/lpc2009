@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Embedded Systems track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* Audio */
+  .track-1 { color: #04207c; }
+  .track-1.block { background: #04207c; color: #fff; }
+  .track-1.light { background: #0633c6; }
+  .track-1.light:hover { background: #062dae; }
+
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+  /* Boot and Init */
+  .track-12 { color: #8b9dcb; }
+  .track-12.block { background: #8b9dcb; color: #fff; }
+  .track-12.light { background: #ffffff; }
+  .track-12.light:hover { background: #e9edf5; }
+
+  /* Embedded Systems */
+  .track-4 { color: #2dc125; }
+  .track-4.block { background: #2dc125; color: #fff; }
+  .track-4.light { background: #8de888; }
+  .track-4.light:hover { background: #68e161; }
+
+  /* General */
+  .track-8 { color: #c97a18; }
+  .track-8.block { background: #c97a18; color: #fff; }
+  .track-8.light { background: #efba79; }
+  .track-8.light:hover { background: #eaa651; }
+
+  /* Inter-Distribution Cooperation */
+  .track-9 { color: #d93ab8; }
+  .track-9.block { background: #d93ab8; color: #fff; }
+  .track-9.light { background: #f4c4ea; }
+  .track-9.light:hover { background: #eb96d9; }
+
+  /* Kernel/Userspace/User  Interfaces */
+  .track-11 { color: #2a5534; }
+  .track-11.block { background: #2a5534; color: #fff; }
+  .track-11.light { background: #438853; }
+  .track-11.light:hover { background: #3b7749; }
+
+  /* Networking */
+  .track-6 { color: #298960; }
+  .track-6.block { background: #298960; color: #fff; }
+  .track-6.light { background: #52cb97; }
+  .track-6.light:hover { background: #39c086; }
+
+  /* Real Time */
+  .track-13 { color: #404139; }
+  .track-13.block { background: #404139; color: #fff; }
+  .track-13.light { background: #66685b; }
+  .track-13.light:hover { background: #5a5b50; }
+
+  /* Security */
+  .track-2 { color: #eb2d2d; }
+  .track-2.block { background: #eb2d2d; color: #fff; }
+  .track-2.light { background: #fac6c6; }
+  .track-2.light:hover { background: #f59393; }
+
+  /* Storage */
+  .track-7 { color: #bebbce; }
+  .track-7.block { background: #bebbce; color: #fff; }
+  .track-7.light { background: #ffffff; }
+  .track-7.light:hover { background: #ffffff; }
+
+  /* X Window System */
+  .track-3 { color: #d253df; }
+  .track-3.block { background: #d253df; color: #fff; }
+  .track-3.light { background: #fbeefc; }
+  .track-3.light:hover { background: #edbaf2; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="4#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Embedded Systems track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>Some would say that Linux has been successful in the embedded space in spite of itself, as there has been relatively little communication between the embedded Linux community and the larger Linux community. Although this has been changing over the past few years, continued progress would be beneficial.</p>
+<p>Given his success in bringing many device manufacturers into the Linux community, we can think of no one better than Greg Kroah-Hartman to lead up Linux Plumber Conference&#8217;s Embedded microconference. Greg has duly assembled a very impressive lineup.</p>
+<p>Greg starts with a real live embedded-Linux developer, Mike Rapoport, who will present &#8220;Embedded Linux Development: a Glance From Inside.&#8221; Mike works for a small embedded company, so is in a good position to describe the process of embedded-device development and the constraints that this process imposes on embedded developers. He will use this information to analyze the reasons for the relatively low number of contributions to the Linux kernel from the embedded community.</p>
+<p>Greg then moves to a real embedded project with &#8220;Lessons Learned Designing an Open Source <span class="caps">UMPC</span>&#8221; by Ben Goska, Tim Harder, and Carlos Jensen. This project produced both the hardware and software for an ultra-mobile personal computer (<span class="caps">UMPC</span>) named <span class="caps">OSWALD</span> (for Oregon State Wireless Active Learning Device). The purpose of <span class="caps">OSWALD</span> is to encourage students to learn about every aspect of computing by permitting experimentation at any level from hardware through firmware and kernel to applications. Every aspect of <span class="caps">OSWALD</span> is therefore open, from the hardware to the applications. This presentation gives a quick overview of OSWALD&#8217;s architecture and the challenges faced in bringing it to reality.</p>
+<p>Greg&#8217;s next topic is a real hardware problem that is affecting even embedded systems, &#8220;Asymmetric Multiprocessing Issues&#8221; by Hollis Blanchard. Yes, multicore CPUs have arrived even in the embedded arena. But embedded system designers want to take things one step further, creating asymmetric systems that run multiple instances of Linux with different capabilities (e.g., real-time and not) on a multicore system. However, such systems do not always have the hardware virtualization capabilities, so these Linux instances must cooperate, leaving hardware resources for each other and sharing hardware as needed. Hollis describes how to use existing solutions to make these systems a reality.</p>
+<p>Greg&#8217;s final topic is a proposed solution for a real problem, &#8220;Flattened Device Tree for All Architectures&#8221;, by Grant Likely. This proposal provides the benefits of OpenFirmware&#8217;s device tree to PowerPC systems that do not provide OpenFirmware. This approach has also been used for some systems in other architectures, including Microblaze, <span class="caps">ARM</span>, and <span class="caps">MIPS</span>. Grant will propose this flattened device tree for other architectures in order to consolidate code and ease porting Linux to new architectures.</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="4#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_44'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_44"><span>*</span></a>
+            
+              <a href="../../../proposals/44" class="title">Asymmetric Multiprocessing Issues</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This talk will discuss problems faced by designers of multicore systems with multiple kernels, with an emphasis on solutions across developer communities.
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/12/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/57">Hollis Blanchard</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_48'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_48"><span>*</span></a>
+            
+              <a href="../../../proposals/48" class="title">Common Infrastructure for Shared Memory IPC?</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Session to discuss and debate shared memory IPC in AMP systems.  We will discuss the services desired, the implementation options, working with non-Linux OS instances, and whether or not it is even feasible to implement a common set of shared memory IPC tools
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/34">Grant Likely</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_24'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_24"><span>*</span></a>
+            
+              <a href="../../../proposals/24" class="title">Embedded Linux development: a glance from inside</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This talk addresses relationship between embedded developers and the Linux community
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            05/25/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/29">Mike Rapoport</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_47'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_47"><span>*</span></a>
+            
+              <a href="../../../proposals/47" class="title">Flattened Device Tree for all architectures</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Session to discuss the work required to make the Flattened Device Tree method of describing hardware available to all architectures.
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/34">Grant Likely</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_23'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_23"><span>*</span></a>
+            
+              <a href="../../../proposals/23" class="title">Gentoo From Scratch</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This talk is about decoupling package management systems from build
+environments, making the decisions &quot;what to build&quot; and &quot;how to build&quot;
+orthogonal.
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            05/24/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/31">Mark Miller</a>, <a href="../../../users/32">Rob Landley</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_61'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_61"><span>*</span></a>
+            
+              <a href="../../../proposals/61" class="title">Lessons Learned Designing an Open Source UMPC </a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The Oregon State Wireless Active Learning Device (OSWALD) is an open, fully featured Ultra-Mobile Personal Computer (UMPC) platform designed by and for students. Come learn about the design, the software hacks, and issues in getting Linux to run smoothly on a custom made hand-held platform.
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/79">Carlos Jensen</a>, <a href="../../../users/85">Tim Harder</a>, <a href="../../../users/82">Ben Goska</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_63'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_63"><span>*</span></a>
+            
+              <a href="../../../proposals/63" class="title">Linux for Control and Consistency in the Build Process</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This presentation addresses ways that developers can overcome development challenges, including using a Linux distribution that is tailored closely to their chosen hardware to help maintain the quality, control and consistency required to deliver commercial-ready devices to market faster.
+          </div>
+        </td>
+
+        
+        <td class='track block track-4'>
+          <a href="4">Embedded Systems</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/84">Joerg Bertholdt</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

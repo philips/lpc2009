@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Kernel/Userspace/User  Interfaces track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* Audio */
+  .track-1 { color: #04207c; }
+  .track-1.block { background: #04207c; color: #fff; }
+  .track-1.light { background: #0633c6; }
+  .track-1.light:hover { background: #062dae; }
+
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+  /* Boot and Init */
+  .track-12 { color: #8b9dcb; }
+  .track-12.block { background: #8b9dcb; color: #fff; }
+  .track-12.light { background: #ffffff; }
+  .track-12.light:hover { background: #e9edf5; }
+
+  /* Embedded Systems */
+  .track-4 { color: #2dc125; }
+  .track-4.block { background: #2dc125; color: #fff; }
+  .track-4.light { background: #8de888; }
+  .track-4.light:hover { background: #68e161; }
+
+  /* General */
+  .track-8 { color: #c97a18; }
+  .track-8.block { background: #c97a18; color: #fff; }
+  .track-8.light { background: #efba79; }
+  .track-8.light:hover { background: #eaa651; }
+
+  /* Inter-Distribution Cooperation */
+  .track-9 { color: #d93ab8; }
+  .track-9.block { background: #d93ab8; color: #fff; }
+  .track-9.light { background: #f4c4ea; }
+  .track-9.light:hover { background: #eb96d9; }
+
+  /* Kernel/Userspace/User  Interfaces */
+  .track-11 { color: #2a5534; }
+  .track-11.block { background: #2a5534; color: #fff; }
+  .track-11.light { background: #438853; }
+  .track-11.light:hover { background: #3b7749; }
+
+  /* Networking */
+  .track-6 { color: #298960; }
+  .track-6.block { background: #298960; color: #fff; }
+  .track-6.light { background: #52cb97; }
+  .track-6.light:hover { background: #39c086; }
+
+  /* Real Time */
+  .track-13 { color: #404139; }
+  .track-13.block { background: #404139; color: #fff; }
+  .track-13.light { background: #66685b; }
+  .track-13.light:hover { background: #5a5b50; }
+
+  /* Security */
+  .track-2 { color: #eb2d2d; }
+  .track-2.block { background: #eb2d2d; color: #fff; }
+  .track-2.light { background: #fac6c6; }
+  .track-2.light:hover { background: #f59393; }
+
+  /* Storage */
+  .track-7 { color: #bebbce; }
+  .track-7.block { background: #bebbce; color: #fff; }
+  .track-7.light { background: #ffffff; }
+  .track-7.light:hover { background: #ffffff; }
+
+  /* X Window System */
+  .track-3 { color: #d253df; }
+  .track-3.block { background: #d253df; color: #fff; }
+  .track-3.light { background: #fbeefc; }
+  .track-3.light:hover { background: #edbaf2; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="11#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Kernel/Userspace/User  Interfaces track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>One of the biggest secrets of FOSS&#8217;s success is a well-crafted set of interfaces amongst the various components. Although famously not set in stone, these interfaces permit different <span class="caps">FOSS</span> projects to work for the most part separately, while still coming together as a coherent system. Such interfaces are clearly a key topic for the Linux Plumbers Conference.</p>
+<p>Therefore, we are happy to announce that Jim Gettys, one of the original developers of the X Window System, past VP of Software at <span class="caps">OLPC</span>, now at Alcatel-Lucent Bell Labs, has selected a great lineup from a set of excellent submissions to the &#8220;Kernel/Userspace/User Interfaces&#8221; microconference.</p>
+<p>Jim&#8217;s first selection is &#8220;<span class="caps">USB</span> 3.0 for Linux&#8221; by Sarah Sharp. Thanks to Sarah, Linux is the first kernel to offer <span class="caps">USB</span> 3.0 support, adding yet another counter-example to the myth that Linux is late in supporting new devices. <span class="caps">USB</span> 3.0 promises high speed (5Gbps) and flexible power management (go green!), but being new, is still in development. This portion of the microconference will give an overview of <span class="caps">USB</span> 3.0 and provide a forum for discussing the inevitable <span class="caps">USB</span> 3.0 development issues.</p>
+<p>Green computing is also key to Jim&#8217;s second selection, &#8220;Power management: Communicating needs and desires&#8221; by Matthew Garrett. This portion of the microconference looks to raise the current power-management discussion beyond static policies to a more dynamic level that automatically takes the needs of userspace applications into account. Given that existing interfaces are not believed to be sufficient to support this sort of dynamic power management, we can expect a lively discussion.</p>
+<p>Jim&#8217;s final selection is &#8220;Checkpoint/Restart in Linux mainline&#8221; by Sukadev Bhattiprolu. Checkpoint/restart is the ability to save the state of a running application, then resume it later on a similar system. There are at least two out-of-tree checkpoint/restart implementations (Zap and OpenVZ), but the potential complexities of a full solution have deterred mainlining. Such complexities include network connections, graphical user interfaces, timed events, response-time constraints, and much more besides. So, if history is any guide, this discussion should generate significant excitement, and hopefully also creative solutions, restrictions, or reframings of the problems.</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="11#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_39'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_39"><span>*</span></a>
+            
+              <a href="../../../proposals/39" class="title">Checkpoint/Restart in Linux mainline</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Requirements and challenges in implementation of Checkpoint/ Restart in Linux mainline.
+          </div>
+        </td>
+
+        
+        <td class='track block track-11'>
+          <a href="11">Kernel/Userspace/User  Interfaces</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/12/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/30">Sukadev Bhattiprolu</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_84'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_84"><span>*</span></a>
+            
+              <a href="../../../proposals/84" class="title">Demystifying initramfs and ELF</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            We take an in-depth look at two kinds of startup procedures: the initramfs system, and the process of loading and executing ELF binaries.
+          </div>
+        </td>
+
+        
+        <td class='track block track-11'>
+          <a href="11">Kernel/Userspace/User  Interfaces</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/22/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/112">Josh Triplett</a>, <a href="../../../users/113">Jamey Sharp</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_27'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_27"><span>*</span></a>
+            
+              <a href="../../../proposals/27" class="title">Power management: Communicating needs and desires</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Implementing power management is the job of the kernel - however, it's userspace's job to let it know what functionality is needed. What interfaces do we need to expose, and how should userspace be making use of them?
+          </div>
+        </td>
+
+        
+        <td class='track block track-11'>
+          <a href="11">Kernel/Userspace/User  Interfaces</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/05/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/37">Matthew Garrett</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_55'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_55"><span>*</span></a>
+            
+              <a href="../../../proposals/55" class="title">Scheduler measurement revisited</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Is it time to update or remove schedstats?
+          </div>
+        </td>
+
+        
+        <td class='track block track-11'>
+          <a href="11">Kernel/Userspace/User  Interfaces</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/76">Rick Lindsley</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_62'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_62"><span>*</span></a>
+            
+              <a href="../../../proposals/62" class="title">USB 3.0 for Linux</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            USB 3.0 promises a faster, more power efficient common device bus.  Is Linux ready for it?
+          </div>
+        </td>
+
+        
+        <td class='track block track-11'>
+          <a href="11">Kernel/Userspace/User  Interfaces</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/11">Sarah Sharp</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

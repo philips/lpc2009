@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Real Time track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="13#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Real Time track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>This fall will mark the fifth anniversary of the -rt patchset. This patchset provides aggressive levels of real-time response and has seen significant production use. Many -rt components have been accepted into mainline, including timekeeping, futex priority inheritance, preemptable <span class="caps">RCU</span>, and much else besides. Nevertheless, the -rt patchset still includes a not-inconsiderable quantity of code, leading to the question of how it might best be fully merged.</p>
+<p>We are fortunate to have Nivedita Singhvi, who is IBM&#8217;s real-time-Linux architect, and who has also worked on virtualization and networking, as the runner for the &#8220;Real Time&#8221; microconference. Nivedita has put together an excellent set of topics to help shed some light on the -rt merge question.</p>
+<p>Nivedita&#8217;s first topic is &#8220;The State of preempt-rt&#8221; by Thomas Gleixner, who has co-maintained the -rt patchset for much of its existence. Thomas will outline what still remains in the out-of-tree -rt patchset and what changes are required in order to merge it. Perhaps the final merge is close at hand? He will also provide an overview of his current development work, primarily advances in threaded interrupt handlers.</p>
+<p>For her second topic, Nivedita selected &#8220;Running Without Systems Management Interrupts&#8221; by Keith Mannthey. Systems management interrupts (SMIs) are used by x86 systems to handle exceptional conditions, such as correctable memory errors or thermal management. Unfortunately, SMIs can extend for many tens of microseconds or even many milliseconds, and some implementations use SMIs to periodically poll for exceptional conditions, which makes it impossible to meet aggressive real-time scheduling deadlines. Keith will therefore discuss what is required, both in the kernel and in userspace, to eliminate non-fatal SMIs, thus enabling aggressive real-time response.</p>
+<p>The third topic is &#8220;Real-Time Benchmarking &#8211; an Open, Cross-Language Micro-Benchmark Suite&#8221; by Vernon Mauery. Linux&#8217;s real-time response has improved impressively over the past decade, but retaining this response will require test suites that developers can easily run. Furthermore, it will be necessary to compare different platforms and different operating systems on an equal footing. Vernon proposes a benchmark suite to help achieve this goal.</p>
+<p>The fourth and final topic is &#8220;Networking and Real Time&#8221; by Nivedita Singhvi. The days when real-time systems were isolated computers controlling a process seem to be coming to a close: today&#8217;s real-time systems must communicate with each other as well as with non-real-time systems. In some cases, large volumes of data must be sent over multiple connections, which means that attention must be paid to both the throughput and the latency of Linux&#8217;s networking stack. Nivedita will discuss the key latency and throughput bottlenecks and discuss possible solutions.</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../../2009/tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="13#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_88'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_88"><span>*</span></a>
+            
+              <a href="../../../proposals/88" class="title">Real-Time Benchmarking - an Open, Cross-Language Micro-Benchmark Suite</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Discussion on a new real-time micro-benchmark suite and how it can help real-time overcome some challenges it faces, such as making apples-to-apples comparisons with other platforms, and how various programming languages compare in the real-time arena.
+          </div>
+        </td>
+
+        
+        <td class='track block track-13'>
+          <a href="../../2009/tracks/13">Real Time</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/22/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/118">Vernon Mauery</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_90'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_90"><span>*</span></a>
+            
+              <a href="../../../proposals/90" class="title">Running without Systems Management Interrupts </a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Describe the implementation, benefits and trade-offs of running without non-fatal System Management Interrupts in a Real-Time Enterprise level environment.  
+
+          </div>
+        </td>
+
+        
+        <td class='track block track-13'>
+          <a href="../../2009/tracks/13">Real Time</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/23/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/121">Keith  Mannthey </a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_49'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_49"><span>*</span></a>
+            
+              <a href="../../../proposals/49" class="title">The state of preempt-rt</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Overview over the state of preempt-rt, the mainline merge status and key changes required.
+          </div>
+        </td>
+
+        
+        <td class='track block track-13'>
+          <a href="../../2009/tracks/13">Real Time</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/66">Thomas Gleixner</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_50'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_50"><span>*</span></a>
+            
+              <a href="../../../proposals/50" class="title">Threaded interrupt handlers</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            State of threaded interrupt handlers in mainline. What is there and what needs to be dome.
+          </div>
+        </td>
+
+        
+        <td class='track block track-13'>
+          <a href="../../2009/tracks/13">Real Time</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/66">Thomas Gleixner</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

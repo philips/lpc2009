@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>X Window System track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* Audio */
+  .track-1 { color: #04207c; }
+  .track-1.block { background: #04207c; color: #fff; }
+  .track-1.light { background: #0633c6; }
+  .track-1.light:hover { background: #062dae; }
+
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+  /* Boot and Init */
+  .track-12 { color: #8b9dcb; }
+  .track-12.block { background: #8b9dcb; color: #fff; }
+  .track-12.light { background: #ffffff; }
+  .track-12.light:hover { background: #e9edf5; }
+
+  /* Embedded Systems */
+  .track-4 { color: #2dc125; }
+  .track-4.block { background: #2dc125; color: #fff; }
+  .track-4.light { background: #8de888; }
+  .track-4.light:hover { background: #68e161; }
+
+  /* General */
+  .track-8 { color: #c97a18; }
+  .track-8.block { background: #c97a18; color: #fff; }
+  .track-8.light { background: #efba79; }
+  .track-8.light:hover { background: #eaa651; }
+
+  /* Inter-Distribution Cooperation */
+  .track-9 { color: #d93ab8; }
+  .track-9.block { background: #d93ab8; color: #fff; }
+  .track-9.light { background: #f4c4ea; }
+  .track-9.light:hover { background: #eb96d9; }
+
+  /* Kernel/Userspace/User  Interfaces */
+  .track-11 { color: #2a5534; }
+  .track-11.block { background: #2a5534; color: #fff; }
+  .track-11.light { background: #438853; }
+  .track-11.light:hover { background: #3b7749; }
+
+  /* Networking */
+  .track-6 { color: #298960; }
+  .track-6.block { background: #298960; color: #fff; }
+  .track-6.light { background: #52cb97; }
+  .track-6.light:hover { background: #39c086; }
+
+  /* Real Time */
+  .track-13 { color: #404139; }
+  .track-13.block { background: #404139; color: #fff; }
+  .track-13.light { background: #66685b; }
+  .track-13.light:hover { background: #5a5b50; }
+
+  /* Security */
+  .track-2 { color: #eb2d2d; }
+  .track-2.block { background: #eb2d2d; color: #fff; }
+  .track-2.light { background: #fac6c6; }
+  .track-2.light:hover { background: #f59393; }
+
+  /* Storage */
+  .track-7 { color: #bebbce; }
+  .track-7.block { background: #bebbce; color: #fff; }
+  .track-7.light { background: #ffffff; }
+  .track-7.light:hover { background: #ffffff; }
+
+  /* X Window System */
+  .track-3 { color: #d253df; }
+  .track-3.block { background: #d253df; color: #fff; }
+  .track-3.light { background: #fbeefc; }
+  .track-3.light:hover { background: #edbaf2; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="3#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>X Window System track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>The X Window System has seen great change over the past year with low-level device handling moving from userspace to the kernel. Now that this important but low-level infrastructure is in place, it is time to look at a higher level of the Linux graphics stack.</p>
+<p>And who better to bring us to a higher level than Keith Packard, project lead for the freedesktop.org Xserver and for the official reference implementation of the X Window System? Keith has put together a can&#8217;t-miss lineup that covers three important topics, each with a pair of potential solutions and a moderated Q&amp;A session.</p>
+<p>The first topic is the &#8220;Video <span class="caps">API</span> Deathmatch: <span class="caps">VDPAU</span> vs. <span class="caps">VAAPI</span>&#8221;, where &#8220;<span class="caps">VDPAU</span>&#8221; is NVIDIA&#8217;s Video Decode and Presentation <span class="caps">API</span> for Unix, and &#8220;<span class="caps">VAAPI</span>&#8221; is the Video Acceleration <span class="caps">API</span> led by Intel, and (not surprisingly) supported by recent Intel integrated graphics hardware, but also supported by recent S3 Graphics hardware. Stephen Warren will be putting on the gloves for <span class="caps">VDPAU</span> and Jonathan Bian will be defending VAAPI&#8217;s honor. Keith will then moderate the Q&amp;A session, with questions taken from any surviving members of the audience.</p>
+<p>The second topic is a more placid discussion of compositing architecture, featuring &#8220;Wayland &#8211; A New Display Server for Linux&#8221; by Kristian Høgsberg and &#8220;Compositing, OpenGL, Double-Buffering, and Dragons&#8221; by Jesse Barnes. The reason we expect this discussion to be more placid is that Kristian asserts that Jesse&#8217;s work will always be relevant. On the other hand, Kristian also compares Jesse&#8217;s work to <span class="caps">FORTRAN</span>, so you be the judge. Kristian will show us how moving functionality (including fonts, OpenGL, Cairo 2D rendering, <span class="caps">GEM</span>, and kernel mode setting) into the kernel and libraries paves the way for small special-purpose display servers such as Wayland. Wayland promises to enable Linux GUIs to run efficiently on yet-smaller embedded devices. Jesse will show us how OpenGL and other pre-existing APIs are affected by a compositing environment. This discussion is critically important: although compositing promises to provide much-needed flexibility to system designers, we need compositing to work efficiently for all applications, while at the same time solving persistent problems with buffer tearing and memory usage.</p>
+<p>The third and final topic is 2D acceleration on modern GPUs, with &#8220;The Battle for 2D Acceleration&#8221; by Chris Wilson and &#8220;2D X State Tracker for Gallium&#8221; by Jakob Bornecrantz. Chris will show us a direct-to-<span class="caps">DRM</span> implementation in Cairo, after which Jakob will present recent work in Gallium. Given that our current 2D architectures (<span class="caps">EXA</span>/<span class="caps">XAA</span>/<span class="caps">UXA</span>) all fail to provide credible acceleration for sophisticated 2D applications, a new direction is clearly needed. Perhaps Chris&#8217;s or Jakob&#8217;s work will show the way to a fully accelerated tesselator for these applications.</p>
+<p>Our new Linux graphics architecture provides the infrastructure required for fantastic new systems, so please join us to work out video APIs, compositing, and 2D acceleration at this year&#8217;s Linux Plumbers Conference!</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="3#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_70'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_70"><span>*</span></a>
+            
+              <a href="../../../proposals/70" class="title">Compositing, OpenGL, double-buffering, and dragons</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Overview of the current state of compositor interfaces and their interactions with OpenGL double-buffering.
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/16/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/94">Ian Romanick</a>, <a href="../../../users/95">Jesse Barnes</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_25'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_25"><span>*</span></a>
+            
+              <a href="../../../proposals/25" class="title">ePaper Progress</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            e-Paper Development, Progress and Problems
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            05/28/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/33">Jaya Kumar</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_80'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_80"><span>*</span></a>
+            
+              <a href="../../../proposals/80" class="title">Remote Video Acceleration for X-Window System</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            It is a solution to enable remote video acceleration on libVA for X-Window.  It adds remote playback feature for libVA but does not require video-decoding capability on the client side.
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/22/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/109">Austin Hu</a>, <a href="../../../users/99">Kecheng Lu</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_54'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_54"><span>*</span></a>
+            
+              <a href="../../../proposals/54" class="title">Shatter</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Shatter is a proposed upgrade to EXA that eliminates Virtual screen sizes and scanout/rendering limits.
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/71">Corbin Simpson</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_29'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_29"><span>*</span></a>
+            
+              <a href="../../../proposals/29" class="title">The Battle for 2D Acceleration</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The initial impetus for cairo-drm came from a desire to experiment with GEM on my i915, and a need to provide an acceleration architecture for the wayland system compositor. (wayland is a minimalistic compositor and input multiplexer that requires client-side rendering.) It proved very easy to incorporate a drm/i915 backend into cairo; first by adapting the existing EXA driver, then to extend it to provide full acceleration for all patterns and to accelerate some of cairo's higher level operations. (The i915 hardware does not seem amenable for offloading tessellation, which has limited just how much we can accelerate in the backend.  On more capable hardware, such as the fully programmable i965, we should be able to achieve much more.)
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/09/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/41">Chris Wilson</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_109'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_109"><span>*</span></a>
+            
+              <a href="../../../proposals/109" class="title">Video API Deathmatch: VDPAU vs. VAAPI</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Video API Deathmatch: VDPAU vs. VAAPI
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            09/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/141">Stephen Warren</a>, <a href="../../../users/142">Jonathan  Bian</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_57'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_57"><span>*</span></a>
+            
+              <a href="../../../proposals/57" class="title">Wayland - A New Display Server for Linux</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Over the last few years the graphics stack have been split up and refactored into shared libraries, kernel drivers and other components.  The X server provides a lot of legacy functionality that isn't used by the modern, composited Linux desktop.  Wayland is a new display server that builds on top of all those components to provide a minimal foundation for a composited destkop.  X can run under Wayland with very little overhead for legacy applications.
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/73">Kristian Høgsberg</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_60'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_60"><span>*</span></a>
+            
+              <a href="../../../proposals/60" class="title">Xorg State Tracker: The last Xorg driver</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            A talk about Gallium and the Xorg state tracker and where they fit in and where they are going.
+          </div>
+        </td>
+
+        
+        <td class='track block track-3'>
+          <a href="3">X Window System</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/72">Jakob Bornecrantz</a>, <a href="../../../users/71">Corbin Simpson</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

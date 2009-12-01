@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Audio track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="1#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Audio track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>First-time Linux users have sometimes been heard to complain that Linux&#8217;s audio system can be a bit troublesome.  Given that these users can be less than understanding when they fail to get sound out of their system, it is good that Linux audio has been getting more attention.  Lennart Poettering, who leads the PulseAudio project and who got his start back with the Linux 2.0.30 kernel, has pulled together an excellent microconference on the Linux audio system, past, present, and future.</p>
+<p>The first topic is the ghost of Linux audio past, in the form of &#8220;Origins and Futures for Linux Audio Infrastructure&#8221;, by Paul Davis.  Paul will discuss how Linux&#8217;s audio environment got to where it is, and how the limited conception of &#8220;audio on a computer&#8221; by some of the early projects resulted in the current wide variety of Linux audio systems, including <span class="caps">OSS</span>, <span class="caps">ALSA</span>, <span class="caps">JACK</span>, and PulseAudio.  He will also offer up discussion as to whether the underlying problem is technical or political.</p>
+<p>Lennart himself will deal with the ghost of Linux audio present with &#8220;State of Linux Audio in 2009&#8221;, and then hand off to the ghost of Linux Audio future, in the form of &#8220;Linux Audio for Mobile and Consumer Devices: Challenges and Evolutions&#8221; by Pierre-Louis Bossart.  Pierre discusses the challenges of enabling hardware accelerators for energy conservation or for <span class="caps">DRM</span>-protected content.  This is expected to require PulseAudio to control not only native streams in the <span class="caps">CPU</span>, but also hardware-mixed streams, while still giving the user full control.  This will lead to the need for audio policies, to be set by <span class="caps">OEM</span> or distribution maintainers.  The final gaze into the crystal ball involves the latencies of audio and video rendering, the discussion of which is hoped to generate ideas on lip-sync and on receiver adaptation.</p>
+<p>If Linux ran only on desktops, laptops, notebooks, and servers, this might be the end of the story.  But Linux is not to be so constrained, and we therefore have the ghost of audio handheld, in the form of &#8220;Practical Experiences from Using PulseAudio in Embedded Handheld Devices&#8221; by Jyri Sarha.  Jyri will discuss integration of complex audio-enhancement algorithms such as acoustic echo cancellation to PulseAudio, as well as implementation of low-latency audio applications as PulseAudio modules.</p>
+<p>With your help, we can further improve the state of Linux Audio!</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../../2009/tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="1#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_32'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_32"><span>*</span></a>
+            
+              <a href="../../../proposals/32" class="title">FFADO: recent developments, future plans</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            With stabilisation for a 2.0 release almost complete, the FFADO project (www.ffado.org) is looking to solve the timing difficulties it has faced using a new kernel-based helper module.  
+
+          </div>
+        </td>
+
+        
+        <td class='track block track-1'>
+          <a href="../../2009/tracks/1">Audio</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/10/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/44">Jonathan Woithe</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_42'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_42"><span>*</span></a>
+            
+              <a href="../../../proposals/42" class="title">Linux audio for mobile and consumer devices: challenges and evolutions</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This presentation aims at sharing lessons learned with the Linux audio stack (gstreamer, PulseAudio, ALSA) on recent consumer and mobile Intel devices. 
+          </div>
+        </td>
+
+        
+        <td class='track block track-1'>
+          <a href="../../2009/tracks/1">Audio</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/12/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/55">Pierre-Louis Bossart</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_67'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_67"><span>*</span></a>
+            
+              <a href="../../../proposals/67" class="title">Origins and Futures for Linux Audio infrastructure</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The Linux audio environment is a mess. Everybody who develops Linux audio software knows this; anybody who uses anything more than basic desktop playback applications (and maybe even just that) knows this too. How did things get to be this way? Can it be solved? What is required to solve it? This talk will be less of a presentation of novel technical material and will instead focus more on the differences (and similarities) between Linux, OS X and Windows and how this has affected the audio environment on each platform.
+          </div>
+        </td>
+
+        
+        <td class='track block track-1'>
+          <a href="../../2009/tracks/1">Audio</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/16/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/89">Paul Davis</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_105'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_105"><span>*</span></a>
+            
+              <a href="../../../proposals/105" class="title">Practical Experiences from Using PulseAudio in Embedded Handheld Devices</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This presentation gives an example how to integrate complex audio enhancement algorithms like acoustic echo canceler to Pulseaudio and how to implement really low audio latency applications as PA modules. 
+          </div>
+        </td>
+
+        
+        <td class='track block track-1'>
+          <a href="../../2009/tracks/1">Audio</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            09/08/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/140">Jyri Sarha</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_51'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_51"><span>*</span></a>
+            
+              <a href="../../../proposals/51" class="title">State of Linux Audio in 2009</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            What happened in the last year in Linux audio?
+          </div>
+        </td>
+
+        
+        <td class='track block track-1'>
+          <a href="../../2009/tracks/1">Audio</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/14/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/67">Lennart Poettering</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Security track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="2#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Security track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>A few of us remember not needing to lock the door as kids, as well as the anonymous/guest logins on the <span class="caps">ARPANET</span> and early Internet. Needless to say, those days are gone forever. Security is now critically important, even for the most obscure computer systems.</p>
+<p>The Linux Plumbers Conference is fortunate to have James Morris and Paul Moore as runners for the Security microconference. James and Paul are quite prominent in the Linux security community, James in his role as Linux kernel security subsystem maintainer, and Paul in a number of roles, including leader of the NetLabel network-security subsystem. The Security microconference is a double-length microconference this year, as is fitting given the importance of security in today&#8217;s world of spammers, botnet controllers, and many other black-hat threats. In the interest of brevity, only four of the seven selections are highlighted below, but please rest assured that the remainder are every bit as interesting and important.</p>
+<p>The first two topics recognize the importance of usability, something that has all too often been neglected in the security field. After all, even the best security mechanisms are of no use if users prefer to disable them. To demonstrate how much progress SELinux has made in recent years, Caleb Case will be showing a demo of SELinux on Ubuntu while Dan Walsh showcases a bit of SELinux in Fedora that anyone can use, namely application sandboxes. These demos are important steps towards the goal of effective security measures designed for the typical Linux user. We hope that numerous Linux users will attend these demos so as to promote a vigorous and illuminating discussion.</p>
+<p>The next topic takes a look at the Simplified Mandatory Access Control Kernel (Smack) through the eyes of it&#8217;s author, Casey Schaufler. Casey presents a case study in Smack configuration by showing how Smack can be used to provide additional security for a well-known commercial database server. This should help both developers and users understand how to apply these new advanced security mechanisms to their own systems and applications, and will hopefully also start a productive collaboration between developers at all levels of the <span class="caps">FOSS</span> stack.</p>
+<p>The fourth and final topic, at least for the moment, is the Linux Kernel Crypto <span class="caps">API</span>, presented by Herbert Xu. Given that Moore&#8217;s Law is still providing transistors, but is no longer increasing clock frequencies, we can expect more hardware offload engines, including hardware encryption. The Linux Kernel Crypto <span class="caps">API</span> is critically important for timely support of such hardware. In addition, Herbert will describe user-space APIs and how this <span class="caps">API</span> might be generalized beyond cryptographic algorithms. Given the need to change cryptographic algorithms as they weaken, either due to newly discovered attacks or due to the inexorable increase in available computing power, we can expect the Linux Kernel Crypto <span class="caps">API</span> to have a key role to play in the security arena &#8212; and to require continued refinement as security requirements change over time.</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../../2009/tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="2#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_56'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_56"><span>*</span></a>
+            
+              <a href="../../../proposals/56" class="title">A New SELinux Policy Infrastructure</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This talk will discuss the requirements and design of a new SELinux policy infrastructure.  It is hoped that this talk will lead to the SELinux community validation of the requirements, acceptance of the new architecture, and a plan to replace the old infrastructure.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/75">James Carter</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_26'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_26"><span>*</span></a>
+            
+              <a href="../../../proposals/26" class="title">Introducing the SELinux Sandbox</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            We have introduced the concept of the general purpose sandbox using SELinux.  
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/02/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/36">Daniel Walsh</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_72'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_72"><span>*</span></a>
+            
+              <a href="../../../proposals/72" class="title">Linux Kernel Crypto API</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The Linux kernel Crypto API has come a long way since it was first added as a part of the IPsec stack.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/17/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/100">Herbert Xu</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_43'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_43"><span>*</span></a>
+            
+              <a href="../../../proposals/43" class="title">Making SELinux Easier to Use</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            SELinux is often disabled immediately or at the first sign of trouble. How can we make SELinux something users actually want to leave on?
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/12/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/61">Bryan Jacobson</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_58'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_58"><span>*</span></a>
+            
+              <a href="../../../proposals/58" class="title">SELinux policy within package managers, why policy is special</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            SELinux policy is currently installed from a single or multiple package(s) as an application which breaks the linkage between policy and the software they are constraining. We will talk about a way to treat policy specially without adding downfalls such as a large increase in packages.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/15/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/70">Joshua Brindle</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_28'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_28"><span>*</span></a>
+            
+              <a href="../../../proposals/28" class="title">Smack and the Application Ecosystem</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Our sample application is a commercial database server. It provides database services over the network using TCP connections. The security goal we're using Smack to address is the isolation of the database files from the users on the server.
+
+We'll cover two different ways to provide access to the database, allowing either remote or local users access to the services of the database while protecting the database itself.
+
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/06/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/28">Casey Schaufler</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_20'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_20"><span>*</span></a>
+            
+              <a href="../../../proposals/20" class="title">Software Security Testing</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The objective of this talk is to define common guidelines for security testing on Linux, sharing our concern about software security and the importance of software security testing as part of the development process.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            05/05/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/21">Ramon de Carvalho Valle</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_79'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_79"><span>*</span></a>
+            
+              <a href="../../../proposals/79" class="title">Status of SELinux in Ubuntu</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            A talk and demo on the current status of SELinux integration in Ubuntu.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/19/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/74">Caleb Case</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_34'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_34"><span>*</span></a>
+            
+              <a href="../../../proposals/34" class="title">Using IMA for Integrity Measurement and Attestation</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Linux 2.6.30 includes the Integrity Measurement Architecture (IMA) system, which measures (hashes) files before they are accessed, and which can use a TPM for hardware signed attestation for centralized management of client integrity.
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/10/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/46">David Safford</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_87'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_87"><span>*</span></a>
+            
+              <a href="../../../proposals/87" class="title">XACE Demonstration and Discussion</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            XACE can be used to make a nifty secure desktop on Xorg.  But is XACE relevant with graphics interfaces moving into the kernel?
+          </div>
+        </td>
+
+        
+        <td class='track block track-2'>
+          <a href="../../2009/tracks/2">Security</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/22/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/116">Eamon Walsh</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

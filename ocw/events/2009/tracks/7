@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Storage track / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../../../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../../../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* Audio */
+  .track-1 { color: #04207c; }
+  .track-1.block { background: #04207c; color: #fff; }
+  .track-1.light { background: #0633c6; }
+  .track-1.light:hover { background: #062dae; }
+
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+  /* Boot and Init */
+  .track-12 { color: #8b9dcb; }
+  .track-12.block { background: #8b9dcb; color: #fff; }
+  .track-12.light { background: #ffffff; }
+  .track-12.light:hover { background: #e9edf5; }
+
+  /* Embedded Systems */
+  .track-4 { color: #2dc125; }
+  .track-4.block { background: #2dc125; color: #fff; }
+  .track-4.light { background: #8de888; }
+  .track-4.light:hover { background: #68e161; }
+
+  /* General */
+  .track-8 { color: #c97a18; }
+  .track-8.block { background: #c97a18; color: #fff; }
+  .track-8.light { background: #efba79; }
+  .track-8.light:hover { background: #eaa651; }
+
+  /* Inter-Distribution Cooperation */
+  .track-9 { color: #d93ab8; }
+  .track-9.block { background: #d93ab8; color: #fff; }
+  .track-9.light { background: #f4c4ea; }
+  .track-9.light:hover { background: #eb96d9; }
+
+  /* Kernel/Userspace/User  Interfaces */
+  .track-11 { color: #2a5534; }
+  .track-11.block { background: #2a5534; color: #fff; }
+  .track-11.light { background: #438853; }
+  .track-11.light:hover { background: #3b7749; }
+
+  /* Networking */
+  .track-6 { color: #298960; }
+  .track-6.block { background: #298960; color: #fff; }
+  .track-6.light { background: #52cb97; }
+  .track-6.light:hover { background: #39c086; }
+
+  /* Real Time */
+  .track-13 { color: #404139; }
+  .track-13.block { background: #404139; color: #fff; }
+  .track-13.light { background: #66685b; }
+  .track-13.light:hover { background: #5a5b50; }
+
+  /* Security */
+  .track-2 { color: #eb2d2d; }
+  .track-2.block { background: #eb2d2d; color: #fff; }
+  .track-2.light { background: #fac6c6; }
+  .track-2.light:hover { background: #f59393; }
+
+  /* Storage */
+  .track-7 { color: #bebbce; }
+  .track-7.block { background: #bebbce; color: #fff; }
+  .track-7.light { background: #ffffff; }
+  .track-7.light:hover { background: #ffffff; }
+
+  /* X Window System */
+  .track-3 { color: #d253df; }
+  .track-3.block { background: #d253df; color: #fff; }
+  .track-3.light { background: #fbeefc; }
+  .track-3.light:hover { background: #edbaf2; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../../../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../../../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../../../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="7#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Storage track</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+
+  <div id="track-show">
+    <span class="description"><p>Linux&#8217;s storage system contains many aspects, from filesystems through the <span class="caps">VFS</span> layer to low-level device handling. Many of these aspects have very active communities and therefore are the subject of much productive discussion. Nevertheless, some aspects of storage do not always get the attention that they require. Here to help us give these aspects the love and attention that they deserve is Matthew Wilcox, who has been a Linux kernel hacker for more than ten years, most recently with Intel&#8217;s Open Source Technology Centre.</p>
+<p>The first topic is &#8220;Evaluating Linux storage APIs for use in <span class="caps">QEMU</span>/<span class="caps">KVM</span>&#8221; by Anthony Liguori. Anthony&#8217;s work with the virtio-pci Linux kernel module (which provides virtual I/O support for guest operating systems running on <span class="caps">QEMU</span>/<span class="caps">KVM</span>) pointed up some shortcomings of the current userspace storage APIs used for <span class="caps">QEMU</span> and <span class="caps">KVM</span>. Cleaning up this <span class="caps">API</span> would be very helpful, both from the viewpoint of simplicity and from the viewpoint of more-efficient virtualization. We hope that this discussion will help Linux further burnish its &#8220;green&#8221; credentials, but with full performance and reduced complexity.</p>
+<p>The second topic is &#8220;Linux Data De-Duplication&#8221; by Mingming Cao. At first glance, the large and growing capacities of disk drives would make any de-duplication a waste of <span class="caps">CPU</span> time. However, solid-state disks are not quite so large, and de-duplication can reduce the amount of memory required for buffer cache, especially when running multiple similar operating systems on the same system. Mingming will describe different approaches to de-duplication, including some that have been discussed within the btrfs community. Please bring your ideas and experiences!</p>
+<p>The third and final topic is &#8220;Locking issues on Clustering File Systems&#8221; by Coly Li. In contrast to the first two topics, which involve pushing more workloads onto a single system, Coly is working on clustering many systems together to work on a single problem. Clusters require special coordination, which is often provided by a distributed lock manager (<span class="caps">DLM</span>, as in the fs/dlm facility in Linux) and a cluster filesystem (such as OCFS2). These coordination facilities bring their own costs, including lock-mastering expense, lock communication cost, <span class="caps">DLM</span> compatibility between fs/dlm and OCFS2, deadlock detection, and so on.</p></span>
+
+    
+
+    <div class='record-controls'>
+      
+      <a href="../tracks.1" class="cancelable">All tracks for this event</a>
+    </div>
+
+    
+
+  
+    <div id="sub_list_for_event_2009" class="sub_list_for_event ">
+      
+      
+      
+        
+
+
+  <div class="proposals_sub_list_for_kind proposals_sub_list_for_kind_proposals">
+    <div class="proposals_sub_list_for_kind_toggle" style="display: none">
+      <a href="7#">Display proposals...</a>
+    </div>
+    <div class="proposals_sub_list_for_kind_content">
+      <h3>Proposals for this track</h3>
+      
+
+
+  
+
+  
+    <table class='proposals' cellspacing='0'>
+      
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_38'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_38"><span>*</span></a>
+            
+              <a href="../../../proposals/38" class="title">Evaluating Linux storage APIs for use in QEMU/KVM</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Discussing limitations of current userspace storage APIs for use in QEMU/KVM.
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/11/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/48">Anthony Liguori</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_37'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_37"><span>*</span></a>
+            
+              <a href="../../../proposals/37" class="title">Linux Data de-duplication</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            Data de-duplication is a effective way to reduce large storage needs by eliminating redundant data, a hot demanded feature for virtualization OS image sharing and efficient data storage backups. It's really valuable  to add data de-duplication support to Linux filesystem, however the feature is quite challenging too. How to get it right? What's the performance impact? Block level or file level? On the fly data de-duplication in filesystem or background userspace de-duplication?
+
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/11/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/49">Mingming Cao</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_76'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_76"><span>*</span></a>
+            
+              <a href="../../../proposals/76" class="title">Locking issues on Clustering File Systems</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            open discussion on locking issue on clustering file systems, especially associated with fs/dlm code
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/18/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/137">Mark Fasheh</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_35'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_35"><span>*</span></a>
+            
+              <a href="../../../proposals/35" class="title">Migrating Data from Old Hardware to New Hardware</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            This talk will focus on some of the challenges in migrating data from old, potentially failing hardware to new hardware: dealing quickly with IO errors, how to optimize the list of files to move and suggestions about how to handle failures during migration.
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/11/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/50">Ric Wheeler</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_83'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_83"><span>*</span></a>
+            
+              <a href="../../../proposals/83" class="title">On predicting predictors: hacking archive formats for fun and prophecy</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            We aim to inform you about the archive formats you use every day.  We will include an in-depth look at the tar, ar, cpio, gzip, bzip2, and deb formats, as well as the internals of the Git object store.  Armed with this information, we will show you a practical application: removing the redundancy between files in version control and distributions of source and binaries.
+
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/22/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/112">Josh Triplett</a>, <a href="../../../users/113">Jamey Sharp</a>
+          
+        </td>
+      </tr>
+      
+        
+        
+        
+
+      <tr class='proposal_row' id='proposal_row_89'>
+        <td rowspan='2' class='description'>
+          <h3>
+            <a href="../../../login" class="favorite favorite_89"><span>*</span></a>
+            
+              <a href="../../../proposals/89" class="title">Proportional IO Controller</a>
+            
+            
+          </h3>
+
+          <div class="excerpt">
+            The Proportional IO controller allows to distribute disk time to tasks/cgroups in proportion to their assigned weights. It leverages existing cgroup infrastructure for task grouping and supports
+specification of weights hierarchically.
+          </div>
+        </td>
+
+        
+        <td class='track block track-7'>
+          <a href="7">Storage</a>
+        </td>
+        
+
+        
+          <td class='date'>
+            06/23/2009
+          </td>
+        
+      </tr>
+      <tr>
+        <td class="speakers" colspan='2'>
+          
+            
+          
+          
+            <a href="../../../users/117">Divyesh Shah</a>, <a href="../../../users/119">Nauman Rafique</a>, <a href="../../../users/120">Vivek Goyal</a>
+          
+        </td>
+      </tr>
+      
+    </table>
+  
+
+
+    </div>
+  </div>
+
+
+      
+    </div>
+  
+
+
+  </div>
+
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../../../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../../../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>

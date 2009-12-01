@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ensemble Independent//vPim 0.695//EN
+CALSCALE:Gregorian
+X-WR-CALNAME:Mark Wong's favorites
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20090925T141500
+DTEND:20090925T150000
+SUMMARY:PORTAL Case Study
+CREATED:20090622T201914
+LAST-MODIFIED:20090901T125824
+DESCRIPTION:A case study of the Portland Oregon Regional Transportation Arc
+ hive Listing (PORTAL) database on PostgreSQL and Linux.
+LOCATION:Salon AB
+URL:http://linuxplumbersconf.org/ocw/sessions/91
+UID:http://linuxplumbersconf.org/ocw/sessions/91
+END:VEVENT
+END:VCALENDAR

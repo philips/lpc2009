@@ -1,0 +1,5 @@
+ wget --exclude-directories=2008 -r -l20 -t1 -N -k -p  --no-host-directories -D linuxplumbersconf.org http://linuxplumbersconf.org/2009 2> wget.log
+cd 2009/style
+wget http://linuxplumbersconf.org/2009/style/tagline.gif
+wget http://linuxplumbersconf.org/2009/style/penguin.gif
+wget http://linuxplumbersconf.org/2009/style/hood.jpg

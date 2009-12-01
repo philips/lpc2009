@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+  <title>Plug and play multiseat / Linux Plumbers Conf: Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Developing the Kernel, Libraries and Utilities / September 23-25, 09 / Portland, OR" />
+
+  <!-- Feeds -->
+  <link href="../proposals.atom" rel="alternate" title="Linux Plumbers Conf: Proposals feed" type="application/atom+xml" />
+  
+
+  <!-- Stylesheets -->
+  
+    <link href="../../2009/style/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="../themes/lpc/stylesheets/custom.css?1257250074" media="screen" rel="Stylesheet" type="text/css" />
+  
+
+  <!-- Dynamic styles -->
+  
+    
+      <style type="text/css" media="screen">
+        
+  /* BoF */
+  .track-14 { color: #1f0de7; }
+  .track-14.block { background: #1f0de7; color: #fff; }
+  .track-14.light { background: #978ef9; }
+  .track-14.light:hover { background: #6c60f6; }
+
+      </style>
+    
+  
+
+  <!-- Scripts -->
+  <script src="../javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../javascripts/jquery-ui.effects.core.js" type="text/javascript"></script>
+  <script src="../javascripts/jquery-ui.effects.highlight.js" type="text/javascript"></script>
+  <script src="../javascripts/application.js" type="text/javascript"></script>
+  
+    
+    
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      app.favorites_path = '/ocw/users/me/favorites';
+      app.current_user = false;
+      app.authenticity_token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22';
+      populate_user_favorites();
+      bind_user_favorite_controls();
+      bind_calendar_items();
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <div id="wrapper">
+     <div id="header">
+           <h1 id="site-title"><span><a href="../../2009/index.html" title="Linux Plumbers Conf 2009" rel="home">Linux Plumbers Conf 2009</a></span></h1>
+           <div id="site-description">Developing the Kernel, Libraries and Utilities</div>
+      </div>
+
+      <div id="access">
+        <div class="skip-link">
+          <a href="110#content" title="Skip to content">Skip to content</a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a href="../../2009/index.html" />Blog</a></li>
+            <li class="page_item page-item"><a href="../../2009/attend/index.html" title="Attend">Attend</a></li>
+            <li class="page_item page-item"><a href="../../2009/schedule/index.html" title="Schedule">Schedule</a></li>
+            <li class="page_item page-item"><a href="../../2009/program/index.html" title="Program">Program</a></li>
+            <li class="page_item page-item"><a href="../../2009/contact/index.html" title="Contact">Contact</a></li>
+            <li class="page_item page-item"><a href="../../2009/faqs/index.html" title="FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="container">
+        <div id="content">
+          <h2 class='entry-title'>Proposals</h2>
+          
+
+          <h2 class='page_title'>Plug and play multiseat</h2>
+
+          <!-- Display notices -->
+          
+          
+          
+          
+
+          <!-- Display view's content -->
+          
+
+<a href="../login" class="favorite favorite_110"><span>*</span></a>
+
+
+
+
+
+
+  
+
+  <div class='show-proposal'>
+
+
+  <div class='proposal-meta'>
+    
+  
+      <div class='track block track-14'>
+        <a href="../events/2009bofs/tracks/14">BoF</a>
+      </div>
+  
+  
+      <a href="../events/2009bofs/session_types/3" class="session_type">BoF</a>
+  
+    <div class='proposal-slug'>
+      lpc2011-0110
+    </div>
+    
+  </div>
+
+
+  
+    <h3>Excerpt</h3>
+    <div class="compressed"><p>Linux multiseat configurations hold the potential to get the cost per Linux user down to half or less of even the cheapest PCs.  But can we make multiseat plug and play?</p></div>
+  
+
+    <h3>Description</h3>
+    <p><a href="http://en.wikipedia.org/wiki/Multiseat_configuration">Multiseat</a> holds tons of promise, but it has been very hard for end-users to configure for each different hardware setup. To take off, it must get easier.</p>
+<p>Inspired by the <a href="http://www.ndiyo.org/news/open-source-hubster">Ndiyo project</a> involving Dr. Quentin Stafford-Fraser and others, good progress has been made.</p>
+<p>This BoF session will start with a demonstration of plug and play multiseat running today on Ubuntu 9.04, showing several sets of <span class="caps">USB</span> displays, keyboards, and mice, each being plugged into the PC to pop up an additional terminal.</p>
+<p>The solution uses a DisplayLink <span class="caps">USB</span> kernel framebuffer device and open source driver, per <a href="http://libdlo.freedesktop.org/wiki/MultiSeatTerminal">these instructions</a></p>
+<p>The BoF session will then open discussion up to the room on remaining problems &#8212; including better integration with coming ConsoleKit &amp; other changes, how best to tackle those problems, and how we can get this support widely integrated into Linux distros.</p>
+
+  
+
+  
+
+  <div class="record-controls">
+    
+    <a href="../events/2009bofs/proposals.1" class="cancelable">Back to list of proposals</a>
+  </div>
+
+  
+    <h3>Speaker</h3>
+
+    
+
+<ul class='user_list'>
+
+  
+
+<li class="user_box vcard ">
+  <a href="../users/143"><img alt="Bernie" class="user-photo photo" src="../system/photos/143/profile/bernie.png" /></a>
+  <div class='user_head'>
+    <h3><a href="../users/143" class="fn n" id="id_143" name="id_143">Bernie Thompson</a></h3>
+      </div>
+  <div class='user_body'>
+    <div class='user_links'>
+      <ul>
+                
+          <li>Website: <a href="http://plugable.com/" onclick="window.open(this.href);return false;" rel="nofollow">http://plugable.com/</a></li>
+        
+        
+          <li>Blog: <a href="http://plugable.com/" onclick="window.open(this.href);return false;" rel="nofollow">http://plugable.com/</a></li>
+        
+        
+          <li>Twitter: <a href="http://twitter.com/plugable" onclick="window.open(this.href);return false;" rel="nofollow">plugable</a></li>
+        
+        
+        
+              </ul>
+    </div>
+
+  
+    <h4>Biography</h4>
+    <div class='note'>
+      <p>Article author for the first issue of Linux Journal <a href="http://www.linuxjournal.com/issue/1" rel="nofollow">http://www.linuxjournal.com/issue/1</a></p>
+<p>Fallen out of touch with Linux to some degree &#8212; I&#8217;ve spent time working at both the <span class="caps">IBM</span> and Microsoft evil empires.  Not that I consider them evil, mind you.</p>
+<p>Lately working on interesting <span class="caps">USB</span> devices, including cheap <span class="caps">USB</span> terminals to enable lower cost and plug-and-play setup of Linux multiseat configurations.</p>
+    </div>
+  
+  
+  
+  
+  
+      
+  </div>
+</li>
+</ul>
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+        </div><!-- content -->
+      </div><!-- container -->
+
+        <div id="primary" class="sidebar">
+          <ul class="xoxo">
+            
+              <li id="login-as">
+                <h3>Welcome</h3>
+                <ul>
+                  <li><a href="../login">Login</a></li>
+                  
+                </ul>
+              </li>
+            
+
+            <li id="subscribe-to">
+              <h3>Subscribe to</h3>
+              <ul>
+                <li class="pre-bulletted"><a href="../proposals.atom" class="feedable">Proposals feed</a></li>
+                
+              </ul>
+            </li>
+
+            
+          </ul>
+        </div><!-- #sidebar-1 -->
+
+    <div id="footer">
+    <a href="http://osuosl.org"><img border="0" src="../../2009/style/osl-hosted.png" alt="OSL"/></a>
+    </div>
+
+  </div><!--wrapper -->
+
+  
+
+  <!-- arbitrary javascript from views -->
+  <script type="text/javascript">
+//<![CDATA[
+window._token = '3de1ad592bd7309acf8c34d1703480c88bfb9b22'
+//]]>
+</script>
+  <script type="text/javascript">
+    
+  </script>
+
+  
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-168427-8");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+    </script>
+
+    <script src="http://static.getclicky.com/79611.js" type="text/javascript"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/79611-db10.gif" /></p></noscript>
+  
+</body>
+</html>
