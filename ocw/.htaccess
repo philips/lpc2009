@@ -1,0 +1,3 @@
+<FilesMatch "login$">
+ForceType text/html
+</FilesMatch>
