@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^custom.css.*$ custom.css [R]
