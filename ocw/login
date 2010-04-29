@@ -85,41 +85,10 @@
           
           
           
-          <div class="flash" id="flash"><p class="failure">Please login to access your user profile.</p></div>
-
-          <!-- Display view's content -->
-          
-
-<p><p>Login with your OpenID account (<a onclick='window.open(this.href);return false;' href='http://openid.net/what/'>what is OpenID?</a>) so you can create proposals and come back later to edit them. If you need an OpenID account, you can <a onclick='window.open(this.href);return false;' href='http://openid.net/get/'>get a free account</a> in about a minute.</p></p>
-
-<form action="http://linuxplumbersconf.org/ocw/browser_session" class="standard-form" id="session_form" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="3de1ad592bd7309acf8c34d1703480c88bfb9b22" /></div>
   <p>
-    <label for="openid_url" class="rightish">
-      <img alt="Openid-icon" src="images/openid-icon.gif" />
-      OpenID
-    </label>
-    <input id="openid_url" name="openid_url" type="text" />
+    This is a static mirror of the LPC 2009 site. Logins are closed.      
   </p>
   <p>
-    <span class="rightish">
-      &nbsp;
-    </span>
-    <input name="commit" type="submit" value="Log in" />
-    &nbsp;
-    <input checked="checked" id="remember_me" name="remember_me" type="checkbox" value="1" />
-    <label for="remember_me">Remember me</label>
-    <!-- BEGIN ID SELECTOR -->
-    <script type="text/javascript">
-      <!--
-          // Tell ID Selector which controls to affect
-          var idselector_input_id = "openid_url";
-          var idselector_target_id = "openid_login_wtf";
-        -->
-    </script>
-    <script src="javascripts/idselector.js" type="text/javascript"></script>
-    <!-- END ID SELECTOR -->
-  </p>
-</form>
 
 
 
